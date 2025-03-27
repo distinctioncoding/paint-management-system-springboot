@@ -1,4 +1,5 @@
 version: '3.8'
+
 services:
   mysql:
     image: mysql:8
@@ -10,7 +11,7 @@ services:
       MYSQL_USER: springuser
       MYSQL_PASSWORD: springpassword
     ports:
-      - "3306:3306"
+      - "3307:3306"
     networks:
       - springboot-network
     healthcheck:
